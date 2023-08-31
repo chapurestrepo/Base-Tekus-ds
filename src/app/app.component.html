@@ -1,18 +1,62 @@
-
-
 <style>
   :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: 14px;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
   }
+
+  .content {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-logo {
+    margin: 30px auto;
+  }
 </style>
 
-<div class="content" role="main">
-  <img src="https://www.tekus.co/wp-content/uploads/assets/brand/logo-tekus.svg" alt="">
+<figure class="company-logo">
+  <img
+    src="https://www.tekus.co/wp-content/uploads/assets/brand/logo-tekus.svg"
+    alt=""
+  />
+</figure>
+<main class="content" role="main">
   <h1>Base ejercicio Tekus Sistema de diseño</h1>
   <p>Haz un fork de este repositorio para maquetar tu ejercicio</p>
-</div>
+
+  <article class="card">
+    <div class="card--content">
+      <div class="card--content--info">
+        <h4 class="card--content--title">Restaurante primavera</h4>
+        <p class="card--content--description">Carta virtual</p>
+      </div>
+      <figure class="card--content--image">
+        <img src="assets/images/maticas.png" alt="maticas png" />
+      </figure>
+    </div>
+    <div class="card--footer">
+      <div class="card--footer--info">
+        <p class="card--footer--info--stats">
+          <strong>02:30</strong>
+          <span class="card--footer--info--stats--views">
+            - 24 VISUALICIONES
+          </span>
+        </p>
+      </div>
+      <div class="card--footer--actions actions">
+        <button type="button" class="btn btn--favorite-button">
+          <i class="bi bi-star"></i>
+        </button>
+      </div>
+    </div>
+  </article>
+</main>
